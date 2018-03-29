@@ -1,0 +1,29 @@
+<html>
+   <body>
+   
+      <form action = "{{ url_for('result') }}" method = "POST">
+		<H2>SimpleCI Input Template Creation Form </h2>
+		<h3>Global Pipeline</h3>
+         <p>GithubURL:  <input type = "text" name = "ggithubURL" /></p>
+         <p>LibraryName :  <input type = "text" name = "glibraryName" /></p>
+         <p>Version:  <input type = "text" name = "gversion" /></p>
+		 <br>
+		 <h3>Bit Bucket</h3>
+         <p>Project:  <input type ="text" name = "bProject" /></p>
+         <p>ServerUrl:  <input type ="text" name = "bServerUrl" /></p>
+         <p>Username:  <input type = "text" name = "bUsername" /></p>
+         <p>Password:  <input type = "password" name = "bPassword" /></p>
+		 <br>
+		 <h3>Artifactory</h3>
+		 <p>Type:  <input type ="text" name = "atype" /></p>
+         <p>Description:  <input type = "text" name = "adescription" /></p>
+		 <p>Path:  <input type = "text" name = "apath" /></p>
+		 <p>CredentialsId:  <input type ="text" name = "acredentialsId" /></p>
+		 <p>Username:  <input type = "text" name = "aUsername" /></p>
+         <p>Password:  <input type = "password" name = "aPassword" /></p>
+		 <br>
+		 <p><input type = "submit" value = "submit" /></p>
+      </form>
+      
+   </body>
+</html>

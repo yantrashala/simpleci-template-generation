@@ -1,0 +1,27 @@
+sharedLibrary {
+   global_pipeline {
+      githubURL 	= "{{ ggithubURL }}"
+      libraryName 	= "{{ glibraryName }}"
+	  version 		= "{{ gversion }}"
+    }
+}
+
+bitbucketConfig {
+   bitbucket_server {
+   	  project 		= "{{ bproject }}"
+	  serverUrl 	= "{{ bserverUrl }}"
+	  username 		= "{{ busername }}"
+	  password 		= "{{ bpassword }}"
+    }
+}
+
+credentials {
+   artifactory {
+	  type 			= "{{ atype }}"
+	  username		= "{{ ausername }}"
+	  credentialsId = "{{ acredentialsId }}"
+	  description 	= "{{ adescription }}"
+	  path 			= "{{ apath }}"
+	  password 		= "{{ apassword }}"
+	}	
+}
